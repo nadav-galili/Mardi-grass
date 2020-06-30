@@ -1,0 +1,18 @@
+.headerL {
+    @include mobile {
+        display: none;
+    }
+}
+
+nav.navbar.navbar-light {
+    @include mobile {
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+}
+
+.collapse.navbar-collapse {
+    @include mobile {
+        padding-right: 80px;
+    }
+}

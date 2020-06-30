@@ -1,0 +1,28 @@
+$baseColorPurple:#9453a6;
+$baseColorGreen:#8cbf3f;
+$baseColorWhite:#f2f2f2;
+$baseColorYellow:#f2cc0f;
+$baseColorBlack:#0d0d0d;
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&display=swap');
+
+$headerFont:(henny penny);
+$headerFont2:pattaya;
+$headerFontSize:2.8em;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+$bodyFont:roboto;
+$bodyFont2:sans-serif;
+// sans-serif;
+
+
+@import "header";
+@import "media";
+@import "body";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

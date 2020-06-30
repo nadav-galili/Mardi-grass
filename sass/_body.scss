@@ -1,0 +1,71 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+
+}
+
+.leftBanner {
+    background-color: $baseColorGreen;
+    height: 150vh;
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+.rightBanner {
+    background-color: $baseColorYellow;
+    height: 150vh;
+    grid-area: 1 / 5 / 6 / 6;
+}
+
+.headline {
+
+    color: $baseColorPurple;
+    margin: 50px;
+    grid-area: 1 / 2 / 2 / 5;
+    font-family: $bodyFont;
+}
+
+.headline h1 {
+    font-weight: 900;
+}
+
+.slider {
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+.carousel-inner {
+    height: 80vh !important;
+    // object-fit: cover;
+}
+
+.carousel-item {
+    height: 70vh;
+    object-fit: fill;
+    border: 5px sold red;
+}
+
+.div5 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div6 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.div7 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.div8 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div9 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.div10 {
+    grid-area: 4 / 4 / 5 / 5;
+}
