@@ -35,11 +35,12 @@ nav.navbar.navbar-light {
 }
 
 .navbar-brand img:first-child {
-    // border: 3px solid red;
+
     padding-bottom: 35px;
 }
 
 .navbar-collapse {
+    background-color: $baseColorPurple;
     padding-left: 50px;
     font-size: 2em;
     text-align: right;

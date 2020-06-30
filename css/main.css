@@ -38,6 +38,7 @@ nav.navbar.navbar-light {
 }
 
 .navbar-collapse {
+  background-color: #9453a6;
   padding-left: 50px;
   font-size: 2em;
   text-align: right;
@@ -52,13 +53,31 @@ nav.navbar.navbar-light {
 @media (min-width: 300px) and (max-width: 890px) {
   nav.navbar.navbar-light {
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 
 @media (min-width: 300px) and (max-width: 890px) {
   .collapse.navbar-collapse {
     padding-right: 80px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 890px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 890px) {
+  .rightBanner {
+    display: hidden;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 890px) {
+  .leftBanner {
+    display: hidden;
   }
 }
 
@@ -117,14 +136,11 @@ nav.navbar.navbar-light {
 }
 
 .carousel-inner {
-  height: 80vh !important;
+  height: 65vh !important;
 }
 
 .carousel-item {
-  height: 70vh;
-  -o-object-fit: fill;
-     object-fit: fill;
-  border: 5px sold red;
+  height: 40vh;
 }
 
 .div5 {

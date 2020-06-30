@@ -7,12 +7,30 @@
 nav.navbar.navbar-light {
     @include mobile {
         padding-bottom: 10px;
-        padding-left: 20px;
+        padding-left: 0;
     }
 }
 
 .collapse.navbar-collapse {
     @include mobile {
         padding-right: 80px;
+    }
+}
+
+.navbar {
+    @include mobile {
+        padding: 0;
+    }
+}
+
+.rightBanner {
+    @include mobile {
+        display: hidden;
+    }
+}
+
+.leftBanner {
+    @include mobile {
+        display: hidden;
     }
 }
