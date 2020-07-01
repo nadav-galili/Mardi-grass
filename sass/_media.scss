@@ -25,12 +25,18 @@ nav.navbar.navbar-light {
 
 .rightBanner {
     @include mobile {
-        display: hidden;
+        display: none;
     }
 }
 
 .leftBanner {
     @include mobile {
-        display: hidden;
+        display: none;
+    }
+}
+
+.slider {
+    @include mobile {
+        grid-area: 2 / 2 / 4 / 5 !important;
     }
 }

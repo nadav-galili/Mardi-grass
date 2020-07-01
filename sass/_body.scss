@@ -9,20 +9,29 @@
 
 .leftBanner {
     background-color: $baseColorGreen;
-    height: 150vh;
+    height: 200vh;
     grid-area: 1 / 1 / 6 / 2;
+}
+
+.leftBanner iframe {
+    padding: 5px;
+    overflow: hidden;
+}
+
+.rightBanner iframe {
+    padding: 5px;
+    overflow: hidden;
 }
 
 .rightBanner {
     background-color: $baseColorYellow;
-    height: 150vh;
+    height: 200vh;
     grid-area: 1 / 5 / 6 / 6;
 }
 
 .headline {
-
     color: $baseColorPurple;
-    margin: 50px;
+    margin: 70px;
     grid-area: 1 / 2 / 2 / 5;
     font-family: $bodyFont;
 }

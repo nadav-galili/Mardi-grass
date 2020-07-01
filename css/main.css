@@ -71,13 +71,23 @@ nav.navbar.navbar-light {
 
 @media (min-width: 300px) and (max-width: 890px) {
   .rightBanner {
-    display: hidden;
+    display: none;
   }
 }
 
 @media (min-width: 300px) and (max-width: 890px) {
   .leftBanner {
-    display: hidden;
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 890px) {
+  .slider {
+    -ms-grid-row: 2 !important;
+    -ms-grid-row-span: 2 !important;
+    -ms-grid-column: 2 !important;
+    -ms-grid-column-span: 3 !important;
+    grid-area: 2 / 2 / 4 / 5 !important;
   }
 }
 
@@ -94,7 +104,7 @@ nav.navbar.navbar-light {
 
 .leftBanner {
   background-color: #8cbf3f;
-  height: 150vh;
+  height: 200vh;
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
   -ms-grid-column: 1;
@@ -102,9 +112,19 @@ nav.navbar.navbar-light {
   grid-area: 1 / 1 / 6 / 2;
 }
 
+.leftBanner iframe {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.rightBanner iframe {
+  padding: 5px;
+  overflow: hidden;
+}
+
 .rightBanner {
   background-color: #f2cc0f;
-  height: 150vh;
+  height: 200vh;
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
   -ms-grid-column: 5;
@@ -114,7 +134,7 @@ nav.navbar.navbar-light {
 
 .headline {
   color: #9453a6;
-  margin: 50px;
+  margin: 70px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
