@@ -35,8 +35,15 @@ nav.navbar.navbar-light {
     }
 }
 
-.slider {
-    @include mobile {
-        grid-area: 2 / 2 / 4 / 5 !important;
+.addsContainer {
+    @include tablet {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
+.sponserPics {
+    @include tablet {
+        width: 100% !important;
     }
 }

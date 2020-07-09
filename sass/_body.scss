@@ -1,15 +1,16 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-template-rows: 2fr 0.5 fr repeat(4, 1fr);
+    grid-column-gap: 10px;
     grid-row-gap: 5px;
+
 
 }
 
 .leftBanner {
     background-color: $baseColorGreen;
-    height: 200vh;
+    height: 300vh;
     grid-area: 1 / 1 / 6 / 2;
 }
 
@@ -25,23 +26,23 @@
 
 .rightBanner {
     background-color: $baseColorYellow;
-    height: 200vh;
+    height: 300vh;
     grid-area: 1 / 5 / 6 / 6;
 }
 
-.headline {
-    color: $baseColorPurple;
-    margin: 70px;
-    grid-area: 1 / 2 / 2 / 5;
-    font-family: $bodyFont;
-}
 
-.headline h1 {
-    font-weight: 900;
-}
 
 .slider {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 1 / 2 /2 / 5;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: $bodyFont2;
+    color: $baseColorPurple;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
 }
 
 .carousel-inner {
@@ -54,26 +55,77 @@
 
 }
 
-.div5 {
+.sponsersHeadline {
+    padding-top: 35px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.5em;
+    grid-area: 2/2/3/5;
+    color: $baseColorPurple;
+    font-family: $bodyFont;
+}
+
+.addsContainer {
+    margin-left: 30px;
+    align-content: center;
+    display: grid;
+    grid-area: 3/2/6/5;
+    // grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    // grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+}
+
+.addsLinks1 {
+
+    grid-area: 3 / 4 / 4 / 5;
+    font-size: 2rem;
+}
+
+.sponserPics {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid $baseColorPurple;
+}
+
+.addsLinks2 {
+
+    grid-area: 3 / 3 / 4 / 4;
+    font-size: 2rem;
+}
+
+.addsLinks3 {
+
+    font-size: 2rem;
     grid-area: 3 / 2 / 4 / 3;
 }
 
-.div6 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div7 {
-    grid-area: 3 / 4 / 4 / 5;
-}
-
-.div8 {
+.addsLinks4 {
+    font-size: 2rem;
     grid-area: 4 / 2 / 5 / 3;
 }
 
-.div9 {
+.addsLinks5 {
+    font-size: 2rem;
     grid-area: 4 / 3 / 5 / 4;
 }
 
-.div10 {
+.addsLinks6 {
+    font-size: 2rem;
     grid-area: 4 / 4 / 5 / 5;
+}
+
+.addsLinks7 {
+    font-size: 2rem;
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.div5 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.addsLinks8 {
+    font-size: 2rem;
+    grid-area: 5 / 4 / 6 / 5;
 }
