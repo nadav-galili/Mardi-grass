@@ -14,34 +14,35 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- Just an image -->
-            <nav class="navbar navbar-light ">
-                <div class="headerL"><span style="color:#f2f2f2">mardi</span><span style="color:#8cbf3f"> gras</span>
-                    <span style="color:#f2cc0f"> Festival</span></div>
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo1.png" width="200" height="200" alt="" loading="lazy">
-                </a>
-            </nav>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="header-container">
+            <div class="headerL"><span style="color: #f2f2f2">mardi</span><span style="color:#8cbf3f"> gras</span>
+                <span style="color:#f2cc0f"> Festival</span></div>
+            <div class="logo"><img src="images/logo1.png" width="200px" height="200px"></div>
+            <div class="headerR"><span style="color: #f2f2f2">new</span><span style="color:#8cbf3f"> orleans</span>
+                <span style="color:#f2cc0f"> 2020</span></div>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-newColor">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse" id="navbarmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">link #1 <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">link 1</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">link #2 <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">link 2</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">link #3 <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">link 3</a>
                     </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -50,9 +51,6 @@
                 width="200px" height="800px"></iframe> </div>
         <div class="rightBanner"><iframe src="https://www.bloodymarystours.com/" width="200px" height="800px"></iframe>
         </div>
-        <!-- <div class="headline"> -->
-        <!-- <h1>Welcome to mardi grass festival new-orleans 2020!</h1> -->
-        <!-- </div> -->
         <div class="slider">
             <h1>welcome to the mardi gras festival new-orleans 2020!</h1>
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -87,25 +85,35 @@
             New-Orleans
         </div>
         <div class="addsContainer">
-            <div class="addsLinks1">
-                <img class="sponserPics" src="images/sheratonPic.jpg">sheraton hotel
+            <div class="addsLinks1"><a href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/"
+                    target="_blank">
+                    <img class="sponserPics" src="images/sheratonPic.jpg"><br>sheraton hotel</a>
             </div>
-            <div class="addsLinks2"><img class="sponserPics" src="images/walkonPic.png">walk ons sports
-                bistraux </div>
-            <div class="addsLinks3"><img class="sponserPics" src="images/aceHotel.jpg">ace hotel new orleans
+            <div class="addsLinks2"><a href="https://walk-ons.com/" target="_blank"><img class="sponserPics"
+                        src="images/walkonPic.jpg"><br>walk-ons sports
+                    bistraux </a></div>
+            <div class="addsLinks3"><a href="https://www.acehotel.com/neworleans/" target="_blank"><img
+                        class="sponserPics" src="images/aceHotel.jpg"><br>ace hotel new orleans</a>
             </div>
-            <div class="addsLinks4"><img class="sponserPics" src="images/ritzCarltonHotel.jpg">ritz carlton hotel</div>
-            <div class="addsLinks5"><img class="sponserPics" src="images/premiumParking.JPG">premium parking </div>
-            <div class="addsLinks6"><img class="sponserPics" src="images/childrensMueum.jpg">
-                childrens museum
+            <div class="addsLinks4"><a href="https://www.ritzcarlton.com/en/hotels/new-orleans" target="_blank"><img
+                        class="sponserPics" src="images/ritzCarltonHotel.jpg"><br>ritz carlton hotel</a></div>
+            <div class="addsLinks5"><a href="https://www.premiumparking.com/city/new-orleans" target="_blank"><img
+                        class="sponserPics" src="images/premiumParking.JPG"><br>premium parking </a></div>
+            <div class="addsLinks6"><a href="https://www.lcm.org/" target="_blank"><img class="sponserPics"
+                        src="images/childrensMueum.jpg">
+                    <br> childrens museum</a>
             </div>
-            <div class="addsLinks7"><img class="sponserPics" src="images/deathMuseomPic.jpg" alt="">museum of death
+            <div class="addsLinks7"><a href="http://www.museumofdeath.net/nola" target="_blank"><img class="sponserPics"
+                        src="images/deathMuseomPic.jpg" alt=""><br>museum of death</a>
             </div>
-            <div class="div5"> </div>
-            <div class="addsLinks8"><img class="sponserPics" src="images/hauntedMuseumPic.jpg" alt="">haunted museum
+            <div class="div5"></div>
+            <div class="addsLinks8"><a href="https://www.bloodymarystours.com/hauntedmuseum.html" target="_blank"><img
+                        class="sponserPics" src="images/hauntedMuseumPic.jpg" alt=""><br>haunted museum</a>
             </div>
         </div>
     </div>
+
+    <div class="footer"></div>
 
 
 
