@@ -67,7 +67,7 @@ header {
 
 .navbar {
   font-size: 1.7em;
-  color: #8cbf3f;
+  background-color: #9453a6;
 }
 
 @media (min-width: 300px) and (max-width: 890px) {
@@ -134,6 +134,13 @@ header {
   }
 }
 
+@media (min-width: 300px) and (max-width: 890px) {
+  .footer-social-links {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
+
 .parent {
   display: -ms-grid;
   display: grid;
@@ -157,7 +164,7 @@ header {
 
 .leftBanner iframe {
   padding: 5px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .rightBanner iframe {
@@ -325,10 +332,99 @@ h1 {
   grid-area: 5 / 4 / 6 / 5;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .footer {
+  padding: 60px 0;
   width: 100%;
-  height: 45vh;
-  background-color: #9453a6;
+  background: #9453a6;
+  color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.footer-title {
+  position: relative;
+  color: #f2f2f2;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #4e4e4e;
+}
+
+.footer-title:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 4px;
+  background: #f2cc0f;
+}
+
+.footer-links a {
+  padding: 10px 0;
+  border-bottom: 1px solid #404040;
+  color: #f2f2f2;
+  display: block;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #f2cc0f;
+}
+
+.footer-social-links li {
+  display: inline-block;
+}
+
+.footer-social-links a {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+  border: 3px solid #404040;
+  border-radius: 50px;
+  text-align: center;
+  color: #f2f2f2;
+  line-height: 1;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background: #8cbf3f;
+}
+
+.footer-social-links a:first-child {
+  background-color: blue;
+}
+
+.footer-social-links a:nth-child(2) {
+  background-color: #3399ff;
+}
+
+.footer-social-links a:nth-child(3) {
+  background-color: #ff0000;
+}
+
+.footer-social-links a:nth-child(4) {
+  background-color: #3333ff;
+}
+
+/* g. Footer bottom section */
+.footer-bottom {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  color: #f2f2f2;
+  background: #8cbf3f;
 }
 
 * {

@@ -59,10 +59,9 @@
     }
 }
 
-// @media only screen and (max-width: 890px) {
-//     .navbar-expand-sm .navbar-collapse {
-//         display: flex !important;
-//         -ms-flex-preferred-size: auto;
-//         flex-basis: auto;
-//     }
-// }
+.footer-social-links {
+    @include mobile {
+        padding-left: 10px;
+        padding-top:10px
+    }
+}
