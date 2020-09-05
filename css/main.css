@@ -118,6 +118,12 @@ header {
   }
 }
 
+@media (min-width: 300px) and (max-width: 890px) {
+  #carouselExampleFade {
+    height: 40vh;
+  }
+}
+
 @media (min-width: 300px) and (max-width: 1200px) {
   .sponserPics {
     width: 100% !important;
@@ -150,6 +156,7 @@ header {
       grid-template-rows: 2fr 0.5 fr repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 5px;
+  background-image: url("/images/slider2.jpg");
 }
 
 .leftBanner {
@@ -169,7 +176,7 @@ header {
 
 .rightBanner iframe {
   padding: 5px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .rightBanner {

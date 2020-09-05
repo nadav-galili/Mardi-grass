@@ -36,6 +36,12 @@
     }
 }
 
+#carouselExampleFade {
+    @include mobile {
+        height: 40vh;
+    }
+}
+
 .sponserPics {
     @include tablet {
         width: 100% !important;
@@ -50,7 +56,7 @@
 //         justify-content: flex-start
 //     }
 // }
- .navbar-expand .navbar-collapse {
+.navbar-expand .navbar-collapse {
     @include mobile {
         display: flex !important;
         -ms-flex-preferred-size: auto;
@@ -62,6 +68,6 @@
 .footer-social-links {
     @include mobile {
         padding-left: 10px;
-        padding-top:10px
+        padding-top: 10px
     }
 }

@@ -4,6 +4,8 @@
     grid-template-rows: 2fr 0.5 fr repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 5px;
+    background-image: url("/images/slider2.jpg");
+    // background-color: gold;
 
 
 }
@@ -21,7 +23,7 @@
 
 .rightBanner iframe {
     padding: 5px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .rightBanner {
