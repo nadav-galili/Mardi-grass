@@ -106,6 +106,12 @@ header {
   }
 }
 
+@media (min-width: 300px) and (max-width: 890px) {
+  .parent {
+    background: none;
+  }
+}
+
 @media (min-width: 300px) and (max-width: 1200px) {
   .addsContainer {
     display: -webkit-box !important;
@@ -156,7 +162,10 @@ header {
       grid-template-rows: 2fr 0.5 fr repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 5px;
-  background-image: url("/images/slider2.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(140, 191, 63, 0.9)), to(rgba(242, 204, 15, 0.6))), url("https://images.unsplash.com/photo-1572885720484-dab40210035f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
+  background: linear-gradient(to right, rgba(140, 191, 63, 0.9), rgba(242, 204, 15, 0.6)), url("https://images.unsplash.com/photo-1572885720484-dab40210035f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .leftBanner {
@@ -236,7 +245,6 @@ h1 {
   font-size: 1.5em;
   font-weight: bold;
   text-transform: capitalize;
-  margin-left: 30px;
   -ms-flex-line-pack: center;
       align-content: center;
   display: -ms-grid;
@@ -432,6 +440,80 @@ h1 {
   text-align: center;
   color: #f2f2f2;
   background: #8cbf3f;
+}
+
+body {
+  background-color: #8cbf3f;
+}
+
+.counterWrapper {
+  margin: 25px;
+  background-color: #9453a6;
+}
+
+#counterText {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: sans-serif;
+  color: #8cbf3f;
+  padding: 5px;
+  font-size: 30px;
+  border-bottom: 3px solid #8cbf3f;
+}
+
+#counter {
+  text-align: center;
+  font-size: 25px;
+  color: #8cbf3f;
+  font-family: sans-serif;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.about, .history, .corona {
+  width: 85%;
+  margin: 0 auto;
+  font-family: roboto;
+}
+
+.about p:first-child, .history p:first-child, .corona p:first-child {
+  font-size: 25px;
+  text-align: center;
+  color: #9453a6;
+  text-decoration: underline;
+}
+
+.about p:nth-child(2), .history p:nth-child(2), .corona p:nth-child(2) {
+  font-size: 15px;
+}
+
+.about img, .history img, .corona img {
+  width: 100%;
+  margin: 0 auto;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mayor {
+  width: 85%;
+  margin: 0 auto;
+  font-family: roboto;
+}
+
+.mayor p:first-child {
+  font-size: 25px;
+  text-align: center;
+  color: #9453a6;
+  text-decoration: underline;
+}
+
+.mayor img {
+  width: 30%;
+  margin: 0 auto;
+  height: 30vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 * {

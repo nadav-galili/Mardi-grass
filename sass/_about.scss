@@ -1,0 +1,85 @@
+body {
+    background-color: $baseColorGreen;
+}
+
+.counterWrapper {
+    margin: 25px;
+    background-color: $baseColorPurple;
+}
+
+#counterText {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $bodyFont2;
+    color: $baseColorGreen;
+    padding: 5px;
+    font-size: 30px;
+    border-bottom: 3px solid $baseColorGreen;
+}
+
+#counter {
+    text-align: center;
+    font-size: 25px;
+    color: $baseColorGreen;
+    font-family: $bodyFont2;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.about {
+    width: 85%;
+    margin: 0 auto;
+    font-family: $bodyFont;
+}
+
+.about p:first-child {
+    font-size: 25px;
+    text-align: center;
+    color: $baseColorPurple;
+    text-decoration: underline;
+}
+
+.about p:nth-child(2) {
+    font-size: 15px;
+}
+
+.about img {
+    width: 100%;
+    margin: 0 auto;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.history {
+    @extend .about
+}
+
+.corona {
+    @extend .about
+}
+
+
+.mayor {
+    width: 85%;
+    margin: 0 auto;
+    font-family: $bodyFont;
+}
+
+
+.mayor p:first-child {
+    font-size: 25px;
+    text-align: center;
+    color: $baseColorPurple;
+    text-decoration: underline;
+}
+
+// .mayor p:nth-child(2) {
+//     font-size: 15px;
+// }
+
+.mayor img {
+    width: 30%;
+    margin: 0 auto;
+    height: 30vh;
+    object-fit: contain;
+}

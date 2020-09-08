@@ -14,13 +14,14 @@ $headerFontSize:2.3em;
 
 $bodyFont:roboto;
 $bodyFont2:sans-serif;
-// sans-serif;
+
 
 
 @import "header";
 @import "media";
 @import "body";
 @import "footer";
+@import "about";
 
 * {
     margin: 0;

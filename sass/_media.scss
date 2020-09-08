@@ -29,6 +29,12 @@
     }
 }
 
+.parent {
+    @include mobile {
+        background: none;
+    }
+}
+
 .addsContainer {
     @include tablet {
         display: flex !important;
@@ -48,14 +54,6 @@
     }
 }
 
-// @media (max-width: 890px) {
-//     .navbar-expand-sm .navbar-collapse {
-//         -ms-flex-flow: row nowrap;
-//         flex-flow: row nowrap;
-//         -ms-flex-pack: start;
-//         justify-content: flex-start
-//     }
-// }
 .navbar-expand .navbar-collapse {
     @include mobile {
         display: flex !important;
