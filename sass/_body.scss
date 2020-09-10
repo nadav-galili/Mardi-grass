@@ -7,10 +7,7 @@
     background:
         linear-gradient(to right,
             rgba($baseColorGreen, 0.9),
-            rgba($baseColorYellow, 0.6)),
-        url("https://images.unsplash.com/photo-1572885720484-dab40210035f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
-    background-repeat: no-repeat;
-    background-size: contain;
+            rgba($baseColorYellow, 0.6));
 }
 
 .leftBanner {
@@ -53,7 +50,7 @@ h1 {
 
 .carousel-inner {
     height: 65vh !important;
-    // object-fit: cover;
+
 }
 
 .carousel-item {

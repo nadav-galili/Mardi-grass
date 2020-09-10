@@ -12,7 +12,7 @@ header {
   background-color: #9453a6;
   font-family: pattaya;
   width: 100%;
-  height: 50vh;
+  height: 45vh;
 }
 
 .header-container {
@@ -153,6 +153,70 @@ header {
   }
 }
 
+@media screen and (min-width: 1201px) {
+  .innerAbout, .innerHistory {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .innerAbout img, .innerHistory img {
+    height: 70vh !important;
+    margin: 20px !important;
+    width: 60% !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .innerHistory p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .innerHistory img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -o-object-position: left bottom;
+       object-position: left bottom;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .history img {
+    height: 100vh !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .counterWrapper {
+    width: 50%;
+    margin: 25px auto !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .innerMayor {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .innerMayor img {
+    width: 20% !important;
+    height: 45vh;
+  }
+}
+
 .parent {
   display: -ms-grid;
   display: grid;
@@ -162,10 +226,8 @@ header {
       grid-template-rows: 2fr 0.5 fr repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(140, 191, 63, 0.9)), to(rgba(242, 204, 15, 0.6))), url("https://images.unsplash.com/photo-1572885720484-dab40210035f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
-  background: linear-gradient(to right, rgba(140, 191, 63, 0.9), rgba(242, 204, 15, 0.6)), url("https://images.unsplash.com/photo-1572885720484-dab40210035f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(140, 191, 63, 0.9)), to(rgba(242, 204, 15, 0.6)));
+  background: linear-gradient(to right, rgba(140, 191, 63, 0.9), rgba(242, 204, 15, 0.6));
 }
 
 .leftBanner {
@@ -443,11 +505,15 @@ h1 {
 }
 
 body {
-  background-color: #8cbf3f;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(140, 191, 63, 0.9)), to(rgba(242, 204, 15, 0.6)));
+  background: linear-gradient(to right, rgba(140, 191, 63, 0.9), rgba(242, 204, 15, 0.6));
 }
 
 .counterWrapper {
+  border: 6px solid #9453a6;
+  border-radius: 30px;
   margin: 25px;
+  margin-top: 35px;
   background-color: #9453a6;
 }
 
@@ -463,31 +529,38 @@ body {
 
 #counter {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #8cbf3f;
   font-family: sans-serif;
   width: 50%;
   margin-left: 25%;
 }
 
-.about, .history, .corona {
+.about, .mayor, .history, .corona {
   width: 85%;
   margin: 0 auto;
   font-family: roboto;
 }
 
-.about p:first-child, .history p:first-child, .corona p:first-child {
-  font-size: 25px;
+.about h2, .mayor h2, .history h2, .corona h2 {
   text-align: center;
   color: #9453a6;
   text-decoration: underline;
 }
 
-.about p:nth-child(2), .history p:nth-child(2), .corona p:nth-child(2) {
-  font-size: 15px;
+.innerAbout img, .innerHistory img {
+  border: 4px solid #9453a6;
+  border-radius: 30px;
+  width: 100%;
+  margin: 0 auto;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.about img, .history img, .corona img {
+.history img {
+  border: 4px solid #9453a6;
+  border-radius: 30px;
   width: 100%;
   margin: 0 auto;
   height: 30vh;
@@ -502,18 +575,26 @@ body {
 }
 
 .mayor p:first-child {
-  font-size: 25px;
-  text-align: center;
-  color: #9453a6;
-  text-decoration: underline;
+  width: 85%;
 }
 
-.mayor img {
-  width: 30%;
-  margin: 0 auto;
-  height: 30vh;
-  -o-object-fit: contain;
-     object-fit: contain;
+.innerMayor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.innerMayor img {
+  margin-right: 20px;
+  height: 40vh;
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #9453a6;
 }
 
 * {
