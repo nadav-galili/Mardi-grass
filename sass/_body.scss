@@ -1,7 +1,8 @@
 .parent {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
-    grid-template-rows: 2fr 0.5 fr repeat(4, 1fr);
+    // grid-template-rows: 2fr 1fr repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 5px;
     background:
@@ -12,29 +13,32 @@
 
 .leftBanner {
     background-color: $baseColorGreen;
-    height: 300vh;
+
     grid-area: 1 / 1 / 6 / 2;
 }
 
 .leftBanner iframe {
     padding: 5px;
     overflow: auto;
+    height: 100vh;
 }
 
 .rightBanner iframe {
     padding: 5px;
     overflow: auto;
+    height: 100vh;
 }
 
 .rightBanner {
     background-color: $baseColorYellow;
-    height: 300vh;
+
     grid-area: 1 / 5 / 6 / 6;
 }
 
 
 
 .slider {
+    height: 850px;
     grid-area: 1 / 2 /2 / 5;
 }
 
@@ -48,10 +52,11 @@ h1 {
     margin: 20px;
 }
 
-.carousel-inner {
-    height: 65vh !important;
-
+#carouselExampleFade .carousel-inner {
+    height: 80vh;
 }
+
+
 
 .carousel-item {
     height: 40vh;
@@ -60,7 +65,7 @@ h1 {
 
 .sponsersHeadline {
     text-transform: capitalize;
-    padding-top: 35px;
+    // padding-top: 35px;
     font-weight: 800;
     text-align: center;
     font-size: 2.5em;
@@ -75,13 +80,13 @@ h1 {
     font-size: 1.5em;
     font-weight: bold;
     text-transform: capitalize;
-    // margin-left: 30px;
+
     align-content: center;
     display: grid;
     grid-area: 3/2/6/5;
-    // grid-column-gap: 10px;
+
     grid-row-gap: 10px;
-    // grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+
 }
 
 .addsContainer a {

@@ -29,11 +29,6 @@
     }
 }
 
-.parent {
-    @include mobile {
-        background: none;
-    }
-}
 
 .addsContainer {
     @include tablet {
@@ -81,7 +76,7 @@
 
 .innerAbout img {
     @include large {
-        height: 70vh !important;
+        height: 50vh !important;
         margin: 20px !important;
         width: 60% !important;
     }
@@ -106,7 +101,7 @@
 
 .history img {
     @include large {
-        height: 100vh !important;
+        height: 50vh !important;
     }
 }
 
