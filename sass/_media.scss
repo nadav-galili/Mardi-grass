@@ -116,16 +116,11 @@
     @extend .about;
 }
 
-// .innerMayor p {
-//     @include large {
-//         margin-left: 30px;
-//     }
-// }
 
 .innerMayor {
     @include large {
         flex-direction: row !important;
-        // padding: 20px;
+
     }
 }
 
@@ -133,5 +128,48 @@
     @include large {
         width: 20% !important;
         height: 45vh;
+    }
+}
+
+.grid {
+    @include mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        height: 100% !important;
+
+    }
+}
+
+.grid img {
+    @include mobile {
+        width: 80% !important;
+        object-fit: cover;
+    }
+}
+
+.grid {
+    @include large {
+        height: 70vh;
+    }
+}
+
+#gallary {
+    @include mobile {
+        padding-bottom: 25px;
+    }
+}
+
+.spotify {
+    @include mobile {
+        flex-wrap: wrap;
+    }
+}
+
+.spotify iframe {
+    @include large {
+        margin: 0 25px;
+
+
     }
 }

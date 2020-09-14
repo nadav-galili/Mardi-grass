@@ -1,0 +1,94 @@
+h2 {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    // padding-bottom: 20px;
+    // font-size: $bodyFontSize;
+    color: $baseColorPurple;
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px;
+    height: 100vh;
+    padding-bottom: 50px;
+    border-bottom: 3px solid $baseColorPurple;
+}
+
+.grid img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: 4px solid $baseColorPurple;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 6px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.video {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 4px solid $baseColorPurple;
+}
+
+.video iframe {
+    border: 4px solid $baseColorPurple;
+    margin-bottom: 20px;
+}
+
+
+.spotify {
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.spotify h3 {
+    margin: 10px;
+    text-align: center;
+    color: $baseColorPurple;
+    height: 50%
+}
+
+.spotify iframe {
+    margin: auto;
+}
+
+.spotifyImg img {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    object-fit: fill;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    ;
+}
